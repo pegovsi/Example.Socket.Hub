@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>Example.Socket.Hub.Bootstrapper</RootNamespace>
+        <PackageId>Example.Socket.Hub.Bootstrapper</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Example.Socket.Hub.Bus\Example.Socket.Hub.Bus.csproj" />
+      <ProjectReference Include="..\Example.Socket.Hub.Presentation\Example.Socket.Hub.Presentation.csproj" />
+    </ItemGroup>
+
+</Project>
